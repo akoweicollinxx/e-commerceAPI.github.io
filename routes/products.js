@@ -1,0 +1,122 @@
+const express = require("express")
+const router = express.Router()
+
+const productData = [
+    {
+    _id:1,
+    title:"products",
+    isNew: false,
+    oldPrice: "500",
+    price: 300,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688981799-2dd3caba737b6687d09f0b51674b4c88?w=600",
+    rating: 4,
+ },
+ {
+    _id:2,
+    title:"products",
+    isNew: false,
+    oldPrice: "400",
+    price: 250,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688981914-4d1a2d90871f58b7a20737ff923d32d2?w=600",
+    rating: 4,
+ },
+ {
+    _id:3,
+    title:"products",
+    isNew: false,
+    oldPrice: "300",
+    price: 150,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688981970-7f00c23e7aef97c9815da83aca9ff0bd?w=600",
+    rating: 4,
+ },
+ {
+    _id:4,
+    title:"products",
+    isNew: false,
+    oldPrice: "400",
+    price: 370,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688982040-e605adc26e72ca69464c96070a3617a8?w=600",
+    rating: 4,
+ },
+ {
+    _id:5,
+    title:"products",
+    isNew: false,
+    oldPrice: "550",
+    price: 500,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688982090-d7440ce8bc79cdbbc0f3ef876acca9bf?w=600",
+    rating: 4,
+ },
+ {
+    _id:6,
+    title:"products",
+    isNew: false,
+    oldPrice: "350",
+    price: 300,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688984421-e3e6bff34b80c8bba4da118e06eacbaa?w=600",
+    rating: 4,
+ },
+ {
+    _id:7,
+    title:"products",
+    isNew: false,
+    oldPrice: "370",
+    price: 310,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688984511-21ecf5781b447ac02302d42f7404b6af?w=600",
+    rating: 4,
+ },
+ {
+    _id:8,
+    title:"products",
+    isNew: true,
+    oldPrice: "300",
+    price: 250,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688984600-a3877b931566248c82fdc5227f9acf13?w=600",
+    rating: 4,
+ },
+ {
+    _id:9,
+    title:"products",
+    isNew: true,
+    oldPrice: "650",
+    price: 500,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688984651-4f4746c4061309c224edfc54c229d434?w=600",
+    rating: 4,
+ },
+ {
+    _id:10,
+    title:"products",
+    isNew: true,
+    oldPrice: "50",
+    price: 400,
+    description:"something about the products",
+    category: "wellness",
+    image: "https://sandbox-uploads.imgix.net/u/1688984706-8a4e089a2686caa80fb219a9872e604e?w=600",
+    rating: 4,
+ }
+]
+
+router.get("/products",(req,res)=>{
+    res.send(productData)
+})
+
+
+module.exports = router
